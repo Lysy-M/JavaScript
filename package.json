@@ -1,0 +1,27 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "Wykonanie scenariusza testu automatycznego umawiania konsultacji z receptą przy użyciu narzędzia Playwright",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Michał Łysiński",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.36.1",
+    "jest": "^29.6.1",
+    "playwright-chromium": "^1.36.1",
+    "playwright-webkit": "^1.36.1"
+  },
+  "dependencies": {
+    "playwright": "^1.36.1",
+    "expect": "^27.2.0"
+  },
+  "directories": {
+    "test": "tests"
+  }
+}
+
+
