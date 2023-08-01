@@ -25,14 +25,14 @@ test.afterAll(async () => {
   }
 });
 
-test("Test umawiania konsultacji na stronie Telemedi", async () => {
+test("Test umawiania konsultacji na stronie *****", async () => {
   // Ustawienie limitu czasu na 200s dla całego testu
   test.setTimeout(200000);
   // Tworzenie nowego kontekstu i strony dla każdego testu
   context = await browser.newContext();
   page = await context.newPage();
 
-  // Krok 1: Przejście na stronę Telemedi
+  // Krok 1: Przejście na stronę *****
   await page.goto("https://*******.com/pl/");
 
   try {
@@ -147,10 +147,10 @@ test("Test umawiania konsultacji na stronie Telemedi", async () => {
     const selectAllCheckbox = await page.waitForSelector('.fk-checkbox__label[for="checkAll"]');
     await selectAllCheckbox.click();
 
-    // Krok 9: Kliknięcie checkbox "TelemediGo"
+    // Krok 9: Kliknięcie checkbox "*****Go"
 
-    // Odznaczamy checkbox "pakiet TelemediGo"
-    const telemediGoCheckbox = await page.waitForSelector('.fk-checkbox__label[for="telemedigo"]');
+    // Odznaczamy checkbox "pakiet *****Go"
+    const telemediGoCheckbox = await page.waitForSelector('.fk-checkbox__label[for="*****"]');
     await telemediGoCheckbox.click();
 
     // Krok 10: Kliknięcie przycisku "Umów za..."
