@@ -33,7 +33,7 @@ test("Test umawiania konsultacji na stronie Telemedi", async () => {
   page = await context.newPage();
 
   // Krok 1: Przejście na stronę Telemedi
-  await page.goto("https://telemedi.com/pl/");
+  await page.goto("https://*******.com/pl/");
 
   try {
     // Oczekiwanie na stan "domcontentloaded"
@@ -58,12 +58,12 @@ test("Test umawiania konsultacji na stronie Telemedi", async () => {
     const loginInput = await page.waitForSelector("#username", {
       state: "visible",
     });
-    await loginInput.fill("telemeditest@gmail.com");
+    await loginInput.fill("*******test@gmail.com");
 
     const passwordInput = await page.waitForSelector("#password", {
       state: "visible",
     });
-    await passwordInput.fill("Telemeditest12!");
+    await passwordInput.fill("*******test12!");
 
     // Kliknij przycisk "Zaloguj się"
     const submitButton = await page.waitForSelector(".MuiButton-containedPrimary");
@@ -92,11 +92,11 @@ test("Test umawiania konsultacji na stronie Telemedi", async () => {
     );
     await receptaButton.click();
 
-    // Krok 4: Wyszukiwanie i wybranie leku "Afastural"
+    // Krok 4: Wyszukiwanie i wybranie leku "******ural"
     const searchInput = await page.waitForSelector("#react-select-2-input", {
       visible: true,
     });
-    await searchInput.fill("Afastural");
+    await searchInput.fill("*****ural");
 
     // Kliknięcie w pole na liście wyników wyszukiwania
     const indicator = await page.waitForSelector(".indicators-container svg", {
