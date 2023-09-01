@@ -1,4 +1,4 @@
-# JavaScriptZADANIE
+# JavaScript ZADANIE
 1. Wykonaj scenariusz testu automatycznego umawiania konsultacji z receptą z
 użyciem narzędzia Playwright.
 Skrypt testowy powinien kolejno realizować następujące kroki testowe:
